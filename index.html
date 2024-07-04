@@ -1,1 +1,115 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+
+      <div class="slid slid_1" style="background-color: #FC8452;">
+        <div class="left">
+          <h1>Drive Customer Satisfaction and Trust</h1>
+          <p>
+            Know what customers boost your ROI and what customers make you lose
+            money across channels, demographics, and segments.
+          </p>
+          <a href="!#" style="color: #FC8452;">Learn More 
+            <img src="./img/Arrow Outwards.svg" alt="">
+        </a>
+        </div>
+        <div class="right">
+            <img src="https://i.ibb.co/dckMYDd/slid-1.png" alt="">
+        </div>
+      </div>
+
+      
+
+
+      <div class="slid slid_2" style="background-color: #9A60B4;">
+        <div class="left">
+          <h1>Drive Customer Satisfaction and Trust</h1>
+          <p>
+            Know what customers boost your ROI and what customers make you lose
+            money across channels, demographics, and segments.
+          </p>
+          <a href="!#" style="color: #9A60B4;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+        </div>
+        <div class="right">
+            <img src="https://i.ibb.co/fQQQD1v/slid-2.png" alt="">
+        </div>
+      </div>
+
+
+
+      <div class="slid slid_3" style="background-color:#3BA272 ;">
+        <div class="left">
+          <h1>Drive Customer Satisfaction and Trust</h1>
+          <p>
+            Know what customers boost your ROI and what customers make you lose
+            money across channels, demographics, and segments.
+          </p>
+          <a href="!#" style="color:#3BA272 ;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+        </div>
+        <div class="right">
+            <img src="https://i.ibb.co/86VR9bK/slid-3.png" alt="">
+        </div>
+      </div>
+
+
+
+      <div class="slid slid_4" style="background-color: #FAC858;">
+        <div class="left">
+          <h1>Drive Customer Satisfaction and Trust</h1>
+          <p>
+            Know what customers boost your ROI and what customers make you lose
+            money across channels, demographics, and segments.
+          </p>
+          <a href="!#" style="color: #FAC858;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+        </div>
+        <div class="right">
+            <img src="https://i.ibb.co/rkZ6KW0/slid-4.png" alt="">
+        </div>
+      </div>
+
+
+
+      <div class="slid slid_5" style="background-color: #73C0DE;">
+        <div class="left">
+          <h1>Drive Customer Satisfaction and Trust</h1>
+          <p>
+            Know what customers boost your ROI and what customers make you lose
+            money across channels, demographics, and segments.
+          </p>
+          <a href="!#" style="color: #73C0DE;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+        </div>
+        <div class="right">
+            <img src="https://i.ibb.co/mq1fP5L/slid-5.png" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+    <script>
+      const slides = document.querySelectorAll('.slid');
+      const slideClasses = ['slid_1', 'slid_2', 'slid_3', 'slid_4', 'slid_5'];
+      let currentIndex = 0;
+
+      function updateSlides() {
+          slides.forEach((slide, index) => {
+              slide.classList.remove(...slideClasses);
+              slide.classList.add(slideClasses[(currentIndex + index) % slideClasses.length]);
+          });
+          currentIndex = (currentIndex + 1) % slideClasses.length;
+      }
+
+      setInterval(updateSlides, 1000); // Change slide every 1 second
+      updateSlides(); // Initialize the slides
+  </script>
+  </body>
+</html>
