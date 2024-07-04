@@ -1,115 +1,290 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+      }
+      :root {
+        --slid-width: 1068px;
+      }
+      .container {
+        width: 1400px;
+        margin: 0 auto;
+      }
+      .slid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--slid-width);
+        height: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+      }
+      .left {
+        color: white;
+        padding-inline: 40px;
+        width: calc(var(--slid-width) / 2);
+        > h1 {
+          line-height: 35px;
+          padding-block: 10px;
+        }
+        > p {
+          padding-bottom: 30px;
+        }
+        > a {
+          background-color: #fff;
+          height: 55px;
+          width: 156px;
+          padding: 16px;
+          border-radius: 999px;
+          -webkit-border-radius: 999px;
+          -moz-border-radius: 999px;
+          -ms-border-radius: 999px;
+          -o-border-radius: 999px;
+        }
+      }
+      .right {
+        width: calc(var(--slid-width) / 2);
+        > img {
+          max-width: 80%;
+        }
+      }
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .slid {
+        position: absolute;
+        z-index: 0;
+        transition: all ease-out;
+        -webkit-transition: all ease-out;
+        -moz-transition: all ease-out;
+        -ms-transition: all ease-out;
+        -o-transition: all ease-out;
+      }
+      .slid_1 {
+        z-index: 3;
+      }
+      .slid_2 {
+        z-index: 2;
+        left: 210px;
+        opacity: 0.6;
+        > .left {
+          display: none;
+        }
+        > .right {
+          display: none;
+        }
+      }
+      .slid_3 {
+        z-index: 1;
+        opacity: 0.6;
+        left: 250px;
+        > .left {
+          display: none;
+        }
+        > .right {
+          display: none;
+        }
+      }
+      .slid_4 {
+        opacity: 0.6;
+        z-index: 1;
+        left: 75px;
+        > .left {
+          display: none;
+        }
+        > .right {
+          display: none;
+        }
+      }
+      .slid_5 {
+        opacity: 0.6;
+        z-index: 2;
+        left: 120px;
+        > .left {
+          display: none;
+        }
+        > .right {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-
-
-      <div class="slid slid_1" style="background-color: #FC8452;">
+      <div class="slid slid_1" style="background-color: #fc8452">
         <div class="left">
           <h1>Drive Customer Satisfaction and Trust</h1>
           <p>
             Know what customers boost your ROI and what customers make you lose
             money across channels, demographics, and segments.
           </p>
-          <a href="!#" style="color: #FC8452;">Learn More 
-            <img src="./img/Arrow Outwards.svg" alt="">
-        </a>
+          <a href="!#" style="color: #fc8452"
+            >Learn More&nbsp
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4717 2.47862L1.52786 11.4133C1.39517 11.546 1.22838 11.6108 1.02752 11.6077C0.826634 11.6046 0.659852 11.5367 0.527171 11.4041C0.394474 11.2714 0.328125 11.1061 0.328125 10.9083C0.328125 10.7105 0.394474 10.5453 0.527171 10.4126L9.46181 1.4687H1.60712C1.40347 1.4687 1.23277 1.3998 1.09501 1.26199C0.957263 1.12417 0.888391 0.953391 0.888391 0.749665C0.888391 0.545923 0.957263 0.375253 1.09501 0.237652C1.23277 0.100052 1.40347 0.03125 1.60712 0.03125H11.043C11.2884 0.03125 11.4941 0.114259 11.6602 0.280274C11.8262 0.446289 11.9092 0.652003 11.9092 0.897416V10.3333C11.9092 10.537 11.8403 10.7077 11.7025 10.8454C11.5646 10.9832 11.3939 11.052 11.1901 11.052C10.9864 11.052 10.8157 10.9832 10.6781 10.8454C10.5405 10.7077 10.4717 10.537 10.4717 10.3333V2.47862Z"
+                fill="#FC8452"
+              />
+            </svg>
+          </a>
         </div>
         <div class="right">
-            <img src="https://i.ibb.co/dckMYDd/slid-1.png" alt="">
+          <img src="https://i.ibb.co/dckMYDd/slid-1.png" alt="" />
         </div>
       </div>
 
-      
-
-
-      <div class="slid slid_2" style="background-color: #9A60B4;">
+      <div class="slid slid_2" style="background-color: #9a60b4">
         <div class="left">
           <h1>Drive Customer Satisfaction and Trust</h1>
           <p>
             Know what customers boost your ROI and what customers make you lose
             money across channels, demographics, and segments.
           </p>
-          <a href="!#" style="color: #9A60B4;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+          <a href="!#" style="color: #9a60b4"
+            >Learn More&nbsp
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4717 2.47862L1.52786 11.4133C1.39517 11.546 1.22838 11.6108 1.02752 11.6077C0.826634 11.6046 0.659852 11.5367 0.527171 11.4041C0.394474 11.2714 0.328125 11.1061 0.328125 10.9083C0.328125 10.7105 0.394474 10.5453 0.527171 10.4126L9.46181 1.4687H1.60712C1.40347 1.4687 1.23277 1.3998 1.09501 1.26199C0.957263 1.12417 0.888391 0.953391 0.888391 0.749665C0.888391 0.545923 0.957263 0.375253 1.09501 0.237652C1.23277 0.100052 1.40347 0.03125 1.60712 0.03125H11.043C11.2884 0.03125 11.4941 0.114259 11.6602 0.280274C11.8262 0.446289 11.9092 0.652003 11.9092 0.897416V10.3333C11.9092 10.537 11.8403 10.7077 11.7025 10.8454C11.5646 10.9832 11.3939 11.052 11.1901 11.052C10.9864 11.052 10.8157 10.9832 10.6781 10.8454C10.5405 10.7077 10.4717 10.537 10.4717 10.3333V2.47862Z"
+                fill="#9A60B4"
+              />
+            </svg>
+          </a>
         </div>
         <div class="right">
-            <img src="https://i.ibb.co/fQQQD1v/slid-2.png" alt="">
+          <img src="https://i.ibb.co/fQQQD1v/slid-2.png" alt="" />
         </div>
       </div>
 
-
-
-      <div class="slid slid_3" style="background-color:#3BA272 ;">
+      <div class="slid slid_3" style="background-color: #3ba272">
         <div class="left">
           <h1>Drive Customer Satisfaction and Trust</h1>
           <p>
             Know what customers boost your ROI and what customers make you lose
             money across channels, demographics, and segments.
           </p>
-          <a href="!#" style="color:#3BA272 ;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+          <a href="!#" style="color: #3ba272"
+            >Learn More&nbsp
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4717 2.47865L1.52786 11.4133C1.39517 11.546 1.22838 11.6108 1.02752 11.6077C0.826634 11.6046 0.659852 11.5368 0.527171 11.4041C0.394474 11.2714 0.328125 11.1061 0.328125 10.9083C0.328125 10.7105 0.394474 10.5453 0.527171 10.4126L9.46181 1.46873H1.60712C1.40347 1.46873 1.23277 1.39983 1.09501 1.26202C0.957263 1.1242 0.888391 0.953421 0.888391 0.749696C0.888391 0.545954 0.957263 0.375283 1.09501 0.237683C1.23277 0.100082 1.40347 0.0312805 1.60712 0.0312805H11.043C11.2884 0.0312805 11.4941 0.114289 11.6602 0.280304C11.8262 0.44632 11.9092 0.652033 11.9092 0.897447V10.3333C11.9092 10.537 11.8403 10.7077 11.7025 10.8454C11.5646 10.9832 11.3939 11.0521 11.1901 11.0521C10.9864 11.0521 10.8157 10.9832 10.6781 10.8454C10.5405 10.7077 10.4717 10.537 10.4717 10.3333V2.47865Z"
+                fill="#3BA272"
+              />
+            </svg>
+          </a>
         </div>
         <div class="right">
-            <img src="https://i.ibb.co/86VR9bK/slid-3.png" alt="">
+          <img src="https://i.ibb.co/86VR9bK/slid-3.png" alt="" />
         </div>
       </div>
 
-
-
-      <div class="slid slid_4" style="background-color: #FAC858;">
+      <div class="slid slid_4" style="background-color: #fac858">
         <div class="left">
           <h1>Drive Customer Satisfaction and Trust</h1>
           <p>
             Know what customers boost your ROI and what customers make you lose
             money across channels, demographics, and segments.
           </p>
-          <a href="!#" style="color: #FAC858;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+          <a href="!#" style="color: #fac858"
+            >Learn More&nbsp
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4717 2.47865L1.52786 11.4133C1.39517 11.546 1.22838 11.6108 1.02752 11.6077C0.826634 11.6046 0.659852 11.5368 0.527171 11.4041C0.394474 11.2714 0.328125 11.1061 0.328125 10.9083C0.328125 10.7105 0.394474 10.5453 0.527171 10.4126L9.46181 1.46873H1.60712C1.40347 1.46873 1.23277 1.39983 1.09501 1.26202C0.957263 1.1242 0.888391 0.953421 0.888391 0.749696C0.888391 0.545954 0.957263 0.375283 1.09501 0.237683C1.23277 0.100082 1.40347 0.0312805 1.60712 0.0312805H11.043C11.2884 0.0312805 11.4941 0.114289 11.6602 0.280304C11.8262 0.44632 11.9092 0.652033 11.9092 0.897447V10.3333C11.9092 10.537 11.8403 10.7077 11.7025 10.8454C11.5646 10.9832 11.3939 11.0521 11.1901 11.0521C10.9864 11.0521 10.8157 10.9832 10.6781 10.8454C10.5405 10.7077 10.4717 10.537 10.4717 10.3333V2.47865Z"
+                fill="#FAC858"
+              />
+            </svg>
+          </a>
         </div>
         <div class="right">
-            <img src="https://i.ibb.co/rkZ6KW0/slid-4.png" alt="">
+          <img src="https://i.ibb.co/rkZ6KW0/slid-4.png" alt="" />
         </div>
       </div>
 
-
-
-      <div class="slid slid_5" style="background-color: #73C0DE;">
+      <div class="slid slid_5" style="background-color: #73c0de">
         <div class="left">
           <h1>Drive Customer Satisfaction and Trust</h1>
           <p>
             Know what customers boost your ROI and what customers make you lose
             money across channels, demographics, and segments.
           </p>
-          <a href="!#" style="color: #73C0DE;">Learn More <img src="./img/Arrow Outwards.svg" alt=""></a>
+          <a href="!#" style="color: #73c0de"
+            >Learn More&nbsp
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4717 2.47865L1.52786 11.4133C1.39517 11.546 1.22838 11.6108 1.02752 11.6077C0.826634 11.6046 0.659852 11.5368 0.527171 11.4041C0.394474 11.2714 0.328125 11.1061 0.328125 10.9083C0.328125 10.7105 0.394474 10.5453 0.527171 10.4126L9.46181 1.46873H1.60712C1.40347 1.46873 1.23277 1.39983 1.09501 1.26202C0.957263 1.1242 0.888391 0.953421 0.888391 0.749696C0.888391 0.545954 0.957263 0.375283 1.09501 0.237683C1.23277 0.100082 1.40347 0.0312805 1.60712 0.0312805H11.043C11.2884 0.0312805 11.4941 0.114289 11.6602 0.280304C11.8262 0.44632 11.9092 0.652033 11.9092 0.897447V10.3333C11.9092 10.537 11.8403 10.7077 11.7025 10.8454C11.5646 10.9832 11.3939 11.0521 11.1901 11.0521C10.9864 11.0521 10.8157 10.9832 10.6781 10.8454C10.5405 10.7077 10.4717 10.537 10.4717 10.3333V2.47865Z"
+                fill="#73C0DE"
+              /></svg
+          ></a>
         </div>
         <div class="right">
-            <img src="https://i.ibb.co/mq1fP5L/slid-5.png" alt="">
+          <img src="https://i.ibb.co/mq1fP5L/slid-5.png" alt="" />
         </div>
       </div>
-
-
     </div>
 
     <script>
-      const slides = document.querySelectorAll('.slid');
-      const slideClasses = ['slid_1', 'slid_2', 'slid_3', 'slid_4', 'slid_5'];
+      const slides = document.querySelectorAll(".slid");
+      const slideClasses = ["slid_1", "slid_2", "slid_3", "slid_4", "slid_5"];
       let currentIndex = 0;
 
       function updateSlides() {
-          slides.forEach((slide, index) => {
-              slide.classList.remove(...slideClasses);
-              slide.classList.add(slideClasses[(currentIndex + index) % slideClasses.length]);
-          });
-          currentIndex = (currentIndex + 1) % slideClasses.length;
+        slides.forEach((slide, index) => {
+          slide.classList.remove(...slideClasses);
+          slide.classList.add(
+            slideClasses[(currentIndex + index) % slideClasses.length]
+          );
+        });
+        currentIndex = (currentIndex + 1) % slideClasses.length;
       }
 
       setInterval(updateSlides, 1000); // Change slide every 1 second
       updateSlides(); // Initialize the slides
-  </script>
+    </script>
   </body>
 </html>
