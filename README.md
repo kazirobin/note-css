@@ -1,9 +1,9 @@
-Here’s a content outline covering the essentials for a new web designer learning HTML, CSS, and JavaScript, with enough detail to give your mentor a clear view of your knowledge so far:
+
 
 ---
 
 ### 1. **HTML Basics**
-    [HTML Tags](https://www.w3schools.com/TAGS/default.asp)
+   [HTML Tags](https://www.w3schools.com/TAGS/default.asp)
    - **What HTML Is**: 
      - HTML (HyperText Markup Language) is the structure of web pages. It defines elements like headings, paragraphs, lists, and links.
    - **Key Elements**:
@@ -19,7 +19,7 @@ Here’s a content outline covering the essentials for a new web designer learni
    - **Semantic HTML**: Using tags like `<article>`, `<section>`, `<footer>`, `<header>` to make pages more understandable.
 
 ### 2. **CSS Basics**
-	[CSS property value](https://www.w3schools.com/cssref/index.php)
+   [CSS Properties](https://www.w3schools.com/cssref/index.php)
    - **What CSS Is**: 
      - CSS (Cascading Style Sheets) is used to style and layout web pages. It controls color, fonts, spacing, and the general visual look.
    - **Selectors**:
@@ -39,7 +39,7 @@ Here’s a content outline covering the essentials for a new web designer learni
      - Using `transition`, `transform`, and `animation`.
 
 ### 3. **JavaScript Basics**
-	[Javascript i have learn](https://kazirobin.github.io/JavaScript_Practice/js/index.html)
+   [JavaScript I Have Learned](https://kazirobin.github.io/JavaScript_Practice/js/index.html)
    - **What JavaScript Is**: 
      - JavaScript is a programming language that allows you to make web pages interactive.
    - **Variables**:
@@ -48,9 +48,9 @@ Here’s a content outline covering the essentials for a new web designer learni
      - Numbers, Strings, Arrays, Objects, Booleans.
    - **Basic Operators**:
      - Arithmetic (`+`, `-`, `*`, `/`)
-     - Assignment (`=`, `+=`, `-=`)
-     - Comparison (`==`, `===`, `!=`, `!==`)
-     - Logical (`&&`, `||`, `!`)
+     - Assignment (`=`, `+=`, `-=`).
+     - Comparison (`==`, `===`, `!=`, `!==`).
+     - Logical (`&&`, `||`, `!`).
    - **Control Structures**:
      - `if` statements, `else`, `else if`.
      - Loops (`for`, `while`).
@@ -72,42 +72,46 @@ Here’s a content outline covering the essentials for a new web designer learni
        - HTML structure.
        - CSS styling for a modern look.
        - JavaScript to add/remove tasks dynamically.
-   - **Next I try it**: 
-     - Learn about CSS framework Tailwind CSS.
+   - **Next Steps**: 
+     - Learn about CSS frameworks (Tailwind CSS).
      - Dive deeper into JavaScript ES6+ features (like `arrow functions`, `promises`).
-     - Explore JavaScript frameworks (e.g., React) and version control (e.g., Git).
-     - I try to use github by desktop application
+     - Explore JavaScript frameworks (React) and version control (Git).
+     - I have tried to use GitHub by the desktop application.
+
 ---
-#### 5. **React js**
-[react js app](https://app-1-peach.vercel.app/)
-#At first i setup a react app. 
 
-####- fetch all data and show in main component card
-####- useState hook for save data 
+### 5. **React.js**
+   [React JS App Example](https://app-1-peach.vercel.app/)
 
--------------------------------------------
-####- local storage function creating
+   #### Steps I've Taken:
+   - **Fetched Data**: Retrieved all data and displayed it in a main component as a card.
+   - **useState Hook**: Used `useState` to save data and handle changes.
+   - **Local Storage Functions**:
+     ```js
+     // Set Items
+     const setLS = (key, value) => {
+       localStorage.setItem(key, JSON.stringify(value));
+     };
 
-//set Items
-const setLS = (key, value) => {
-  localStorage.setItem(key, JSON.stringify(value));
-};
-//get Items
-const getLS = (key, initialValue) => {
-  const storeStr = localStorage.getItem(key);
-  return storeStr ? JSON.parse(storeStr) : initialValue;
-};
-//export functions
-export { setLS, getLS };
+     // Get Items
+     const getLS = (key, initialValue) => {
+       const storeStr = localStorage.getItem(key);
+       return storeStr ? JSON.parse(storeStr) : initialValue;
+     };
 
-####- now get data from local
- const [cook,setCook] = 
-useState(() => getLS("cook",[]))
+     // Export functions
+     export { setLS, getLS };
+     ```
 
- useEffect(() => { setLS("cook",cook)
-      		 },[cook])
+   - **Get Data from Local Storage**:
+     ```js
+     const [cook, setCook] = useState(() => getLS("cook", []));
 
----------------------------------------------------------
-####- router
+     useEffect(() => {
+       setLS("cook", cook);
+     }, [cook]);
+     ```
 
+   - **Router**: Implemented basic routing for different pages (though link routing is currently not working properly).
 
+---
