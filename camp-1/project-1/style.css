@@ -1,0 +1,18 @@
+body{
+    background-color: #F3E5D8;
+}
+h2{
+    color: #7D483C;
+}
+.card{
+    background-color: #fff;
+    max-width: 650px;
+    margin: auto;
+    padding: 20px;
+}
+.img{
+    width: 100%;
+}
+.preparation h2{
+    color: #743C55;
+}

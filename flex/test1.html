@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .boxs{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid salmon;
+        }
+        .box{
+            border: 1px solid;
+            margin: 2px;
+            flex: auto;
+        }
+        .box:nth-child(1){
+            align-self: flex-end;
+            align-items: end;
+            justify-self: end;
+            justify-content: end;
+            justify-items: end;
+            
+        }
+        .box:nth-child(2){
+            flex:  1;
+            /* flex-grow: .3; */
+            /* flex-basis: 100px; */
+        }
+        .box:nth-child(3){
+
+        }
+        .box:nth-child(4){
+
+        }
+        .box:nth-child(5){
+
+        }
+    </style>
+</head>
+<body>
+    <h1>basic flex</h1>
+    <div class="boxs">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3 again and again Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat amet labore sequi quas non odit itaque id officia assumenda autem?</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+    </div>
+</body>
+</html>
