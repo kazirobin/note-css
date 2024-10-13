@@ -10,6 +10,9 @@ body {
 h2 {
   color: #7d483c;
 }
+hr {
+  margin: 30px;
+}
 .card {
   background-color: #fff;
   max-width: 650px;
@@ -27,13 +30,14 @@ h2 {
 .flex {
   display: flex;
 }
-.title {
-  width: 50%;
-}
-.title,
-.value {
-  font-weight: 700;
-  padding-inline-start: 20px;
+.preparation {
+  background-color: #743c552a;
+  padding: 20px 60px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 h1 {
   font-size: 2.5rem;
@@ -45,11 +49,20 @@ h2 {
 p {
   font-size: 1.1rem;
   color: #615755;
+  font-weight: 500;
 }
 li {
   font-size: 1.1rem;
-  color: #615755;
+  color: #743c55;
   margin-block: 5px;
+}
+ol li,
+ul li {
+  font-weight: 700;
+  padding-left: 30px;
+}
+ol li {
+  margin-left: -15px;
 }
 @media (max-width: 600px) {
   h1 {
@@ -66,6 +79,21 @@ li {
   }
 }
 .preparation h2,
-.value {
+tr td {
   color: #743c55;
+}
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid #61575585;
+}
+th {
+  text-align: left;
+  color: #615755;
+}
+tr td,
+th {
+  padding: 10px 25px;
+  font-weight: 700;
 }
