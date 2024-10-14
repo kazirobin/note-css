@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  margin: 0 auto;
+  width: 600px;
+  height: 380px;
+  border: 1px solid red;
+  display: flex;
+}
+.left {
+  background-image: url("./img/image-product-desktop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.left {
+  width: 45%;
+}
+.right {
+  width: 50%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 40px;
+}
+.right h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: grey;
+}
+.right h2 {
+  font-size: 1.8rem;
+}
+.right p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+}
+.price {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.price h1 {
+  color: green;
+}
+del {
+  text-decoration: line-through;
+}
+button {
+  padding-block: 8px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      width: 100%;
+    }
+    .left,
+    .right {
+      width: 100%;
+      border: 1px solid red;
+    }
+    .left {
+        height: 700px;
+      background-image: url("./img/image-product-mobile.jpg");
+    }
+  }
