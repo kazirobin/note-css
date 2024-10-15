@@ -11,8 +11,7 @@ p {
 }
 .main {
   margin: 0 auto;
-  width: 600px;
-  height: 380px;
+  max-width: 600px;
   border: 1px solid red;
   display: flex;
 }
@@ -20,20 +19,16 @@ p {
   background-image: url("./img/image-product-desktop.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100%;
-}
-
-.left {
+  height: auto;
   width: 45%;
 }
 .right {
   width: 50%;
-}
-.right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-block: 40px;
+  gap: 10px;
 }
 .right h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -70,18 +65,28 @@ button {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 @media (max-width: 768px) {
-    .main {
-      flex-direction: column;
-      width: 100%;
-    }
-    .left,
-    .right {
-      width: 100%;
-      border: 1px solid red;
-    }
-    .left {
-        height: 700px;
-      background-image: url("./img/image-product-mobile.jpg");
-    }
+  .main {
+    flex-direction: column;
+    width: 350px;
+    height: 550px;
   }
+  .left,
+  .right {
+    width: 100%;
+    border: 1px solid red;
+  }
+  .left {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./img/image-product-mobile.jpg");
+    height: 50%;
+  }
+  .right {
+    justify-content: space-between;
+    height: 50%;
+    margin-top: 20px;
+    padding: 0px 20px;
+  }
+}
