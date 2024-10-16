@@ -6,6 +6,9 @@
   outline: 0;
   text-decoration: none;
 }
+html{
+  font-size: 16px;
+}
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -79,7 +82,7 @@ button {
   }
   .left {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-image: url("./img/image-product-mobile.jpg");
     height: 50%;
   }

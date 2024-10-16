@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card{
+    width: 280px;
+    border-radius: 10px;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+.card__textarea{
+    padding: 15px;
+}
+.card__img{
+    width: 100%;
+}
+.card__tag{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #24803C;
+    border: 1px solid #24803C;
+    display: inline;
+    border-radius: 10px;
+    padding: 0px 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card__title{
+    font-size: 0.9rem;
+    padding-block: 9px;
+    text-transform: capitalize;
+}
+.card__ditails{
+    font-size: 0.9rem;
+}
+.card__btn{
+    font-weight: 600;
+    color: blue;
+    margin-top: 20px;
+}
+.fa-solid{
+    color: blue;
+}
