@@ -1,0 +1,22 @@
+
+@media(max-width:1200px){
+    nav{
+        width: 50%;
+    }
+}
+@media(max-width:1000px){
+    nav{
+        width: 60%;
+    }
+}
+@media(max-width:600px){
+    nav{
+        width: 100%;
+    }
+    main.active aside{
+        display: none;
+    }
+    section{
+        width: 90%;
+    }
+}

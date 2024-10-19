@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telegram-like chat application template">
+    <title>Chat App Template</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 25%;
+            background-color: #2a2f32;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header for sidebar (user info or app name) */
+        .sidebar-header {
+            padding: 20px;
+            background-color: #1e2326;
+            text-align: center;
+        }
+
+        /* List of chats */
+        .chat-list {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .chat-list .chat {
+            padding: 15px;
+            border-bottom: 1px solid #40474b;
+            cursor: pointer;
+        }
+
+        .chat-list .chat:hover {
+            background-color: #383e42;
+        }
+
+        /* Main chat window */
+        .main-chat {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        /* Chat header for selected chat */
+        .chat-header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Chat messages area */
+        .chat-messages {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #e5ddd5;
+        }
+
+        .chat-messages .message {
+            margin-bottom: 15px;
+            max-width: 60%;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Sent message styling */
+        .message.sent {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+
+        /* Received message styling */
+        .message.received {
+            background-color: white;
+            align-self: flex-start;
+        }
+
+        /* Message input box */
+        .message-input {
+            display: flex;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+        }
+
+        .message-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .message-input button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .message-input button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar containing the list of chats -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Chat App</h2>
+        </div>
+        <div class="chat-list">
+            <!-- Example chat list items -->
+            <div class="chat">
+                <p><strong>John Doe</strong></p>
+                <p>Hey, how are you?</p>
+            </div>
+            <div class="chat">
+                <p><strong>Jane Smith</strong></p>
+                <p>Let's meet up tomorrow.</p>
+            </div>
+            <div class="chat">
+                <p><strong>Bob Lee</strong></p>
+                <p>Working on the project!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main chat window -->
+    <div class="main-chat">
+        <!-- Chat header with contact name -->
+        <div class="chat-header">
+            <div><strong>John Doe</strong></div>
+            <div>Last seen at 2:45 PM</div>
+        </div>
+
+        <!-- Chat messages -->
+        <div class="chat-messages">
+            <div class="message received">
+                <p>Hey! How are you?</p>
+            </div>
+            <div class="message sent">
+                <p>I'm doing great! How about you?</p>
+            </div>
+            <div class="message received">
+                <p>I'm good too, thanks for asking!</p>
+            </div>
+        </div>
+
+        <!-- Message input area -->
+        <div class="message-input">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+
+</body>
+</html>
