@@ -11,7 +11,7 @@
     }
 }
 @media(max-width:600px){
-    /* main.active nav{
+    main.active nav{
         width: 100%;
     }
     main.active aside{
@@ -19,5 +19,5 @@
     }
     main.active aside{
         width: 100%;
-    } */
+    }
 }
