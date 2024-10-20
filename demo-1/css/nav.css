@@ -1,0 +1,12 @@
+nav{
+    width: 20%;
+    border: 1px solid red;
+}
+main nav{
+    display: none;
+    background-color: aquamarine;
+}
+
+main.active nav{
+    display: block;
+}

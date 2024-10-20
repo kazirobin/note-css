@@ -1,0 +1,36 @@
+/* .users section design */
+.users {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.user {
+  border: 1px solid gray;
+  margin-block: 2px;
+  display: flex;
+}
+.top .user i {
+  font-size: 2rem;
+}
+.details {
+    width: 100%;
+  padding-inline: 15px;
+}
+.title,
+.description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.title {
+  border: 1px solid;
+}
+.user img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
