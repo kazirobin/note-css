@@ -34,6 +34,9 @@ main aside{
 main.active nav{
     display: block;
 }
+main.active aside .top{
+    display: none;
+}
 section{
     border: 3px solid yellow;
     display: inline-block;
@@ -46,12 +49,14 @@ section{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 1px solid;
 }
 .user{
     border: 1px solid gray;
     margin-block: 2px;
     display: flex;
+}
+.top .user i{
+    font-size: 2rem;
 }
 .ditails{
     flex: 1;
@@ -62,6 +67,10 @@ section{
     justify-content: space-between;
     width: 100%;
 }
+.title{
+    border: 1px solid;
+
+}
 .user img{
     height: 45px;
     width: 45px;
@@ -70,4 +79,8 @@ section{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.top{
+    margin-bottom: auto;
+    width: 100%;
 }
