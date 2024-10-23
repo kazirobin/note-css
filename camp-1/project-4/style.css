@@ -23,21 +23,21 @@ body{
     
 }
 .left{
-    max-width: 350px;
-    height: 250px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .left h1{
-    max-width: 250px;
 }
 .left p{
     padding-block: 20px;
 }
+.right{
+    max-width: 500px;
+}
 .right img{
-    
-    max-width: 400px;
+    width: 100%;
 }
 .btns{
     display: flex;
