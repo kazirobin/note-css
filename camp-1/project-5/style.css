@@ -23,6 +23,7 @@
     justify-content: space-between;
 }
 .btn{
+    cursor: pointer;
     font-weight: 600;
     padding-inline: 10px;
     border-radius: 5px;
@@ -62,30 +63,24 @@ td span{
 .paid{
     border: 3px solid green;
     color: green;
-    text-align: center;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+
 }
 .sent{
     border: 3px solid blue;
     color: blue;
-    text-align: center;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+
 }
 .draft{
     border: 3px solid gray;
     color: gray;
+}
+.paid,.sent,.draft{
+    cursor: pointer;
     text-align: center;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+
 }
