@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+section {
+  padding: 10px;
+  margin: auto;
+  max-width: 950px;
+}
+/* navbar section style start  */
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(128, 128, 128, 0.473);
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo i {
+  padding-inline-end: 5px;
+}
+.links {
+  display: flex;
+  margin-left: 5vw;
+  margin-right: auto;
+}
+.link {
+  margin-left: 2vw;
+}
+/* navbar section style end  */
+/* product section style start */
+.product {
+  display: flex;
+}
+.product .left {
+  overflow: hidden;
+}
+.product .right {
+  padding: 10px;
+}
+.product .right .text-2 {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  margin-block: 10px;
+}
+.product .right .text-2 h5 {
+  color: gray;
+  text-decoration: line-through;
+}
+.product .right .text-3 {
+  font-size: 0.8rem;
+  display: inline;
+  padding: 5px;
+  color: orangered;
+  background-color: rgba(255, 255, 0, 0.445);
+}
+.product .right .rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
+  padding-block: 10px;
+  font-size: 0.8rem;
+}
+.product .right .rating i {
+  color: rgb(255, 174, 0);
+}
+.product .right .rating a {
+  color: blue;
+}
+.product .right .text-4,
+.product .right .text-5 {
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+.product .right .text-5 {
+  color: gray;
+  padding-block: 10px;
+}
+.product .right .colors {
+  display: flex;
+  gap: 10px;
+}
+.product .right .colors .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.product .right .colors .color i{
+    color: white;
+}
+.product .right .colors .color:nth-child(1) {
+    background: rgb(58, 128, 0);
+}
+.product .right .colors .color:nth-child(2) {
+    background: rgb(255, 187, 0);
+}
