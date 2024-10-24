@@ -11,6 +11,7 @@
 }
 body{
   max-width: 1200px;
+  margin: auto;
 }
 img {
   padding: 5px;
