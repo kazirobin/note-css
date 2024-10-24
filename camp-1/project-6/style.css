@@ -9,7 +9,9 @@
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+body{
+  max-width: 1200px;
+}
 img {
   padding: 5px;
   border-radius: 8px;
@@ -57,6 +59,7 @@ a {
 /* product section style start */
 .product {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 
 }
@@ -254,6 +257,7 @@ a {
 }
 .discover .card {
   display: flex;
+  justify-content: center;
   gap: 20px;
   padding-block-start: 20px;
   flex-wrap: wrap;
