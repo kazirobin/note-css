@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-inline: 20px;
+}
+/* navbar style start  */
+header {
+  background-color: lightgrey;
+}
+.navbar {
+  margin: 0 auto;
+  padding-inline: 20px;
+  max-width: 1200px;
+}
+/* navbar logo and hamburger style  */
+.navbar .navbar__logo .navbar__logo__img {
+  width: 50px;
+  margin: 3px;
+}
+.navbar__action__link {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.navbar__action__link:hover {
+    background-color: peru;
+}
+.navbar__action__btn {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+}
+/* position and display  */
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar__action {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+#nav-show {
+  display: none;
+}
+#nav-show:checked ~ .navbar .navbar__action {
+  display: none;
+}
+/* navbar style end */
