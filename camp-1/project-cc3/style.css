@@ -35,7 +35,12 @@ header {
 .navbar__action__btn {
   color: white;
   background-color: blue;
-  padding: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 /* position and display  */
 .navbar {
