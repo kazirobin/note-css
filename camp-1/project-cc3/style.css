@@ -51,7 +51,5 @@ header {
 #nav-show {
   display: none;
 }
-#nav-show:checked ~ .navbar .navbar__action {
-  display: none;
-}
+
 /* navbar style end */

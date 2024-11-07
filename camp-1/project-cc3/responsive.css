@@ -10,6 +10,9 @@
     .navbar__logo__img.bar{
         display: inline;
     }
+    #nav-show:checked ~ .navbar .navbar__action {
+        display: none;
+      }
     .navbar__action{
         display: flex;
         flex-direction: column;
@@ -34,6 +37,9 @@
     .navbar__logo__img.bar{
         display: inline;
     }
+    #nav-show:checked ~ .navbar .navbar__action {
+        display: none;
+      }
     .navbar__action{
         display: flex;
         flex-direction: column;
