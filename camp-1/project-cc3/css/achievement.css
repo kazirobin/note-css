@@ -22,13 +22,18 @@
   @media only screen and (max-width: 599px) {
     .achievement{
       flex-direction: column;
-      width: 80%;
+      width: 80vw;
+      justify-content: center;
+      align-items: center;
     }
   }
   /* Small Devices (portrait tablets and large phones, 600px to 767px) */
   @media only screen and (min-width: 600px) and (max-width: 767px) {
     .achievement{
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
     }
   }
   
