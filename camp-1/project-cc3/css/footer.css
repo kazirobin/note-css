@@ -53,3 +53,11 @@ footer {
   color: white;
   height: 100%;
 }
+/* Responsive Styles */
+
+/* Extra Small Devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+  .footer__links {
+    flex-direction: column;
+  }
+}
