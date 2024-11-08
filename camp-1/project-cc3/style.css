@@ -86,25 +86,3 @@ h6 {
   color: white;
   background-color: var(--blue);
 }
-/* banner section two  */
-
-.banner__two .banner__lift {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding-block-start: 40px;
-}
-
-/* position section in banner__two */
-.banner__right .label{
-  background-color: var(--blue);
-}
-
-
-.banner__right .label span{
-  color: white;
-  font-size: 1rem;
-  line-height: 10px;
-  font-weight: 600;
-}

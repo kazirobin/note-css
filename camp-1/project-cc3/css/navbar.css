@@ -17,7 +17,7 @@ header {
   text-decoration: none;
   text-transform: capitalize;
   padding: 10px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .navbar__action__link:hover {
   background-color: var(--blue);
@@ -28,13 +28,17 @@ header {
 .navbar {
   display: flex;
   gap: 20px;
+  height: 80px;
 }
 .navbar__action {
-  flex: 1;
-  display: flex;
+  background-color: lightgrey;
+  display: block;
   text-align: center;
-  justify-content: space-between;
+  z-index: 10;
+  transform: translateY(0%);
+  transition: all 0.5s ease;
 }
+
 #nav-show {
   display: none;
 }
@@ -44,6 +48,7 @@ header {
 @media only screen and (max-width: 599px) {
   .navbar {
     flex-direction: column;
+    padding-top: 10px;
   }
   .navbar__logo {
     display: flex;
@@ -65,9 +70,9 @@ header {
   }
   #nav-show:checked ~ .navbar .navbar__action {
     flex: 1;
-    display: none;
     text-align: center;
     justify-content: space-between;
+    transform: translateY(-150%);
   }
 }
 
@@ -75,6 +80,7 @@ header {
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .navbar {
     flex-direction: column;
+    padding-top: 10px;
   }
   .navbar__logo {
     display: flex;
@@ -83,12 +89,7 @@ header {
   .navbar__logo__img.bar {
     display: inline;
   }
-  #nav-show:checked ~ .navbar .navbar__action {
-    flex: 1;
-    display: none;
-    text-align: center;
-    justify-content: space-between;
-  }
+
   .navbar__action {
     display: flex;
     flex-direction: column;
@@ -99,34 +100,67 @@ header {
     display: flex;
     flex-direction: column;
   }
+  #nav-show:checked ~ .navbar .navbar__action {
+    flex: 1;
+    text-align: center;
+    justify-content: space-between;
+    transform: translateY(-150%);
+  }
 }
 
 /* Medium devices (landscape tablets, 768px to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    align-items: center;
+  }
   .navbar__logo__img.bar {
     display: none;
   }
   .navbar__action {
     align-items: center;
+  }
+  .navbar__action {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
   }
 }
 
 /* Large devices (laptops/desktops, 992px to 1199px) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    align-items: center;
+  }
   .navbar__logo__img.bar {
     display: none;
   }
   .navbar__action {
     align-items: center;
+  }
+  .navbar__action {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .navbar {
+    align-items: center;
+  }
   .navbar__logo__img.bar {
     display: none;
   }
   .navbar__action {
     align-items: center;
+  }
+  .navbar__action {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
   }
 }
