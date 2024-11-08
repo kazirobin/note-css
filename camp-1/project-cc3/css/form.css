@@ -1,0 +1,35 @@
+/* form section style  */
+.form {
+    text-align: center;
+    padding-block: 30px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block-start: 20px;
+  }
+  input {
+    border: 2px solid gainsboro;
+    margin: 5px;
+    padding: 10px;
+    flex: 1 1 100%;
+  }
+  button[type="submit"] {
+    flex: 1 1 100%;
+  }
+  /* Responsive Styles */
+  
+  /* Large Devices (laptops/desktops, 992px to 1199px) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .input__half {
+      flex: 1 1 40%;
+    }
+  }
+  
+  /* Extra Large Devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .input__half {
+      flex: 1 1 40%;
+    }
+  }
+  

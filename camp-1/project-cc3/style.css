@@ -1,6 +1,10 @@
 /* navbar section style  */
 @import url("./css/./navbar.css");
 @import url("./css/./banner.css");
+@import url("./css/./achievement.css");
+@import url("./css/./services.css");
+@import url("./css/./testimonials.css");
+@import url("./css/./form.css");
 :root {
   --blue: #2676f0;
 }
@@ -85,4 +89,18 @@ h6 {
 .text-4:hover {
   color: white;
   background-color: var(--blue);
+}
+.text-5 {
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--blue);
+  margin-top: 15px;
+}
+.text-5:hover {
+  background-color: white;
+  color: var(--blue);
 }

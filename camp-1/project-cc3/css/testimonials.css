@@ -1,0 +1,25 @@
+/* testimonials section style  */
+.testimonials{
+    text-align: center;
+    padding-block: 40px;
+    isolation: isolate;
+    background-color: white;
+  }
+  .testimonials__cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-block: 25px;
+    gap: 10px;
+  }
+  .testimonials__card{
+    background-color: lightgray;
+    padding: 20px;
+    max-width: 530px;
+  }
+  .testimonials__card__details{
+    padding-block: 20px;
+  }
+  .testimonials__card img{
+    width: 130px;
+  }
