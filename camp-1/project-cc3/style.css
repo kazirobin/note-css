@@ -1,8 +1,19 @@
+/* navbar section style  */
+@import url("./css/./navbar.css");
+@import url("./css/./banner.css");
+:root {
+  --blue: #2676f0;
+}
+.full {
+  width: 100vw;
+  height: 100vh;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: black;
+  border: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
@@ -10,51 +21,90 @@
   max-width: 1200px;
   padding-inline: 20px;
 }
-/* navbar style start  */
-header {
-  background-color: lightgrey;
+img {
+  width: 100%;
+  display: inline-block;
 }
-.navbar {
-  margin: 0 auto;
-  padding-inline: 20px;
-  max-width: 1200px;
+/* text style section */
+/* <h2>Empower Your2</h2> */
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
-/* navbar logo and hamburger style  */
-.navbar .navbar__logo .navbar__logo__img {
-  width: 50px;
-  margin: 3px;
+/* <h1>Business1</h1> */
+h1 {
+  font-size: 4rem;
+  color: var(--blue);
 }
-.navbar__action__link {
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 10px;
+/* <h3>Who We Are</h3> */
+h3 {
+  font-size: 2rem;
 }
-.navbar__action__link:hover {
-    background-color: peru;
-}
-.navbar__action__btn {
+/* <h4>1000+</h4> */
+h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
   color: white;
-  background-color: blue;
+}
+/* <h5>Our Services</h5> */
+h5 {
+  font-size: 2rem;
+  color: var(--blue);
+}
+/* <h6>10+ Years</h6> */
+h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+/* <p class="text-1">Digital Strategy</p> */
+.text-1,
+.text-2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/* <p class="text-2">Satisfied Clients</p> */
+.text-2 {
+  color: white;
+}
+/* <p class="text-3">Read More</p> */
+.text-3 {
+  font-weight: 600;
+  color: white;
+}
+/* <p class="text-4">Get Started</p> */
+.text-4 {
+  font-weight: 600;
+  color: var(--blue);
   padding: 10px 20px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  cursor: pointer;
 }
-/* position and display  */
-.navbar {
+.text-4:hover {
+  color: white;
+  background-color: var(--blue);
+}
+/* banner section two  */
+
+.banner__two .banner__lift {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
-}
-.navbar__action {
-  flex: 1;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-}
-#nav-show {
-  display: none;
+  padding-block-start: 40px;
 }
 
-/* navbar style end */
+/* position section in banner__two */
+.banner__right .label{
+  background-color: var(--blue);
+}
+
+
+.banner__right .label span{
+  color: white;
+  font-size: 1rem;
+  line-height: 10px;
+  font-weight: 600;
+}

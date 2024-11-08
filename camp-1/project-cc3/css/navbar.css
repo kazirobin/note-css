@@ -1,0 +1,132 @@
+/* navbar style start  */
+header {
+  background-color: lightgrey;
+}
+.navbar {
+  margin: 0 auto;
+  padding-inline: 20px;
+  max-width: 1200px;
+}
+/* navbar logo and hamburger style  */
+.navbar .navbar__logo .navbar__logo__img {
+  width: 50px;
+  margin: 3px;
+}
+.navbar__action__link {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px;
+  transition: all 1s ease;
+}
+.navbar__action__link:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+/* position and display  */
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar__action {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+#nav-show {
+  display: none;
+}
+
+/* navbar style end */
+/* Extra small devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__logo__img.bar {
+    display: inline;
+  }
+
+  .navbar__action {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navbar__action__links {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  #nav-show:checked ~ .navbar .navbar__action {
+    flex: 1;
+    display: none;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 767px) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__logo__img.bar {
+    display: inline;
+  }
+  #nav-show:checked ~ .navbar .navbar__action {
+    flex: 1;
+    display: none;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .navbar__action {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navbar__action__links {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar__logo__img.bar {
+    display: none;
+  }
+  .navbar__action {
+    align-items: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar__logo__img.bar {
+    display: none;
+  }
+  .navbar__action {
+    align-items: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navbar__logo__img.bar {
+    display: none;
+  }
+  .navbar__action {
+    align-items: center;
+  }
+}
