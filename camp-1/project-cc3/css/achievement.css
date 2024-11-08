@@ -22,6 +22,7 @@
   @media only screen and (max-width: 599px) {
     .achievement{
       flex-direction: column;
+      width: 80%;
     }
   }
   /* Small Devices (portrait tablets and large phones, 600px to 767px) */
