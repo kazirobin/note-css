@@ -1,46 +1,44 @@
 /* achievement section style start  */
-.achievement{
-    background-color: var(--blue);
-    display: flex;
-    width: fit-content;
-    margin: 20px auto;
-    padding-inline: 100px;
-    border-radius: 100px;
-    isolation: isolate;
-  }
-  .achievement__card{
-    display: inline-block;
-    padding: 30px;
-    text-align: center;
-  }
-  .achievement__card img{
-    width: 90px;
-  }
-  /* Responsive Styles */
-  
-  /* Extra Small Devices (phones, 599px and down) */
-  @media only screen and (max-width: 599px) {
-    .achievement{
-      flex-direction: column;
-      width: 80vw;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  /* Small Devices (portrait tablets and large phones, 600px to 767px) */
-  @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .achievement{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+.achievement {
+  background-color: var(--blue);
+  display: flex;
+  width: fit-content;
+  margin: 20px auto;
+  padding-inline: 100px;
+  border-radius: 100px;
+  isolation: isolate;
+}
+.achievement__card {
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+}
+.achievement__card img {
+  width: 90px;
+}
+/* Responsive Styles */
 
-    }
+/* Extra Small Devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+  .achievement {
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
   }
-  
-  /* Medium Devices (landscape tablets, 768px to 991px) */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .achievement{
-      flex-direction: column;
-    }
+}
+/* Small Devices (portrait tablets and large phones, 600px to 767px) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .achievement {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+}
+
+/* Medium Devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .achievement {
+    flex-direction: column;
+  }
+}
