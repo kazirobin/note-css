@@ -28,14 +28,16 @@ header {
 .navbar {
   display: flex;
   gap: 20px;
-  height: 80px;
+  height: auto;
+  transition: height 0.5s ease;
 }
 .navbar__action {
   background-color: lightgrey;
+  width: 100%;
   display: block;
   text-align: center;
   z-index: 10;
-  transform: translateY(0%);
+  transform: translateY(-10%);
   transition: all 0.5s ease;
 }
 
@@ -67,6 +69,9 @@ header {
     gap: 15px;
     display: flex;
     flex-direction: column;
+  }
+  #nav-show:checked ~ .navbar  {
+    height: 80px;
   }
   #nav-show:checked ~ .navbar .navbar__action {
     flex: 1;

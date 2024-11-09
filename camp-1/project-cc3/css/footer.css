@@ -47,6 +47,7 @@ footer {
   align-items: center;
 }
 .sub__input button {
+  padding: 10px;
   cursor: pointer;
   background-color: blue;
   font-weight: 700;

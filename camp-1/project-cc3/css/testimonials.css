@@ -23,3 +23,28 @@
   .testimonials__card img{
     width: 130px;
   }
+  /* Responsive Styles */
+  
+  /* Extra Small Devices (phones, 599px and down) */
+  @media only screen and (max-width: 599px) {
+    .testimonials__cards{
+      margin-block: 10px;
+    }
+  }
+  
+  /* Small Devices (portrait tablets and large phones, 600px to 767px) */
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+  }
+  
+  /* Medium Devices (landscape tablets, 768px to 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  }
+  
+  /* Large Devices (laptops/desktops, 992px to 1199px) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  }
+  
+  /* Extra Large Devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
+  
