@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        height: 500px;
+        background-color: red;
+      }
+      body {
+        background-color: var(--primary-color-2);
+        transition: --primary-color 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <section></section>
+    <h1>hello</h1>
+    <section></section>
+    <script>
+      CSS.registerProperty({
+        name: "--primary-color",
+        syntax: "<color>",
+        inherits: false,
+        initialValue: "purple",
+      });
+      CSS.registerProperty({
+        name: "--primary-color-2",
+        syntax: "<color>",
+        inherits: false,
+        initialValue: "blue",
+      });
+    </script>
+  </body>
+</html>
