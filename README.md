@@ -49,6 +49,10 @@ Sure! Below is a **complete, professional, and well-organized CSS note sheet** t
 
 ---
 
+Here’s the **final, combined, and comprehensive CSS note sheet** that integrates all the topics from the previous two sheets. This version is structured professionally, with clear headings, subheadings, and explanations for each property and concept. It’s designed to be a **one-stop resource** for learning CSS from basic to advanced levels.
+
+---
+
 # **Complete CSS Notes**
 
 ---
@@ -95,6 +99,16 @@ Pseudo-selectors allow you to style elements based on their state or position.
 ### **2.4 Inheritance**
 - **Inherited Properties**: Properties like `color`, `font-family`, and `font-size` are inherited by child elements.
 - **Non-inherited Properties**: Properties like `margin`, `padding`, and `border` are not inherited.
+### **2.5 Nested CSS**
+```
+body{
+  section{
+    div{
+      color:red;
+    }
+  }
+}
+```
 
 ---
 
@@ -255,41 +269,341 @@ CSS Houdini provides low-level APIs for custom styling and animations.
 
 ---
 
-## **7. Tools & Best Practices**
+## **7. Properties Explained**
 
-### **7.1 CSS Preprocessors**
-- **SASS/SCSS**: Adds features like variables, nesting, and mixins.
-- **LESS**: Similar to SASS but with a different syntax.
-
----
-
-### **7.2 CSS Frameworks**
-- **Bootstrap**: Predefined components and utilities.
-- **Tailwind CSS**: Utility-first CSS framework.
-
----
-
-### **7.3 Performance Optimization**
-- **Minification**: Reduce file size.
-- **Critical CSS**: Load above-the-fold styles first.
-- **Avoiding Repaints and Reflows**: Optimize rendering performance.
+### **7.1 `border`**
+- **What it does**: Defines the border around an element.
+- **When to use**: When you want to add a visible border to an element.
+- **How to apply**:
+  ```css
+  .element {
+    border: 2px solid red; /* width | style | color */
+  }
+  ```
 
 ---
 
-### **7.4 Accessibility**
-- **Focus Styles**: Ensure interactive elements are keyboard accessible.
-- **ARIA Attributes**: Enhance accessibility with CSS.
+### **7.2 `background`**
+- **What it does**: Sets the background of an element (color, image, gradient, etc.).
+- **When to use**: When you want to style the background of an element.
+- **How to apply**:
+  ```css
+  .element {
+    background: linear-gradient(red, blue) no-repeat center/cover;
+  }
+  ```
 
 ---
 
-## **8. Resources**
-- **Browser DevTools**: Inspect and debug CSS.
-- **CSS Validators**: Check for errors in your CSS.
-- **Online Playgrounds**: CodePen, JSFiddle, etc.
+### **7.3 `background-clip: text`**
+- **What it does**: Clips the background to the text content.
+- **When to use**: When you want to create text with a gradient or image fill.
+- **How to apply**:
+  ```css
+  .element {
+    background: linear-gradient(red, blue);
+    background-clip: text;
+    color: transparent;
+  }
+  ```
 
 ---
 
-This **complete CSS note sheet** is now professional, well-structured, and easy to follow. You can add code examples, diagrams, or links to resources to make it even more engaging! Let me know if you need further assistance. 😊
+### **7.4 `outline-width`**
+- **What it does**: Sets the width of the outline around an element.
+- **When to use**: When you want to add a focus indicator (e.g., for accessibility).
+- **How to apply**:
+  ```css
+  .element {
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: blue;
+  }
+  ```
+
+---
+
+### **7.5 `inset`**
+- **What it does**: Shorthand for `top`, `right`, `bottom`, and `left` in positioned elements.
+- **When to use**: When positioning an element absolutely or fixed.
+- **How to apply**:
+  ```css
+  .element {
+    position: absolute;
+    inset: 10px 20px 30px 40px; /* top | right | bottom | left */
+  }
+  ```
+
+---
+
+### **7.6 `aspect-ratio`**
+- **What it does**: Sets the aspect ratio of an element (width-to-height ratio).
+- **When to use**: When you want to maintain a specific ratio for responsive designs.
+- **How to apply**:
+  ```css
+  .element {
+    aspect-ratio: 16 / 9; /* width / height */
+  }
+  ```
+
+---
+
+### **7.7 `isolation`**
+- **What it does**: Creates a new stacking context for an element.
+- **When to use**: When you want to control how elements blend or stack.
+- **How to apply**:
+  ```css
+  .element {
+    isolation: isolate; /* Prevents blending with parent elements */
+  }
+  ```
+
+---
+
+### **7.8 `mix-blend-mode`**
+- **What it does**: Defines how an element’s content blends with its background.
+- **When to use**: When creating artistic or overlapping effects.
+- **How to apply**:
+  ```css
+  .element {
+    mix-blend-mode: multiply; /* Other values: screen, overlay, etc. */
+  }
+  ```
+
+---
+
+### **7.9 `grid-area`**
+- **What it does**: Assigns an element to a specific area in a CSS Grid layout.
+- **When to use**: When working with CSS Grid to define item placement.
+- **How to apply**:
+  ```css
+  .element {
+    grid-area: header; /* Assign to a named grid area */
+  }
+  ```
+
+---
+
+### **7.10 `counter-set`**
+- **What it does**: Creates or resets a CSS counter.
+- **When to use**: When numbering elements (e.g., lists, headings).
+- **How to apply**:
+  ```css
+  .element {
+    counter-set: section 1; /* Reset counter to 1 */
+  }
+  body {
+  counter-reset: section;
+  }
+  h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";}
+  ```
+
+---
+
+### **7.11 `color-scheme`**
+- **What it does**: Specifies the color scheme (light/dark) for an element.
+- **When to use**: When supporting dark mode or light mode.
+- **How to apply**:
+  ```css
+  .element {
+    color-scheme: dark; /* Also supports 'light' or 'normal' */
+  }
+  ```
+
+---
+
+### **7.12 `columns`**
+- **What it does**: Defines the number of columns and their width in a multi-column layout.
+- **When to use**: When creating newspaper-like layouts.
+- **How to apply**:
+  ```css
+  .element {
+    columns: 2 200px; /* number of columns | column width */
+  }
+  ```
+
+---
+
+### **7.13 `word-break`**
+- **What it does**: Controls how words break at the end of a line.
+- **When to use**: When dealing with long words or text in small containers.
+- **How to apply**:
+  ```css
+  .element {
+    word-break: break-all; /* Other values: keep-all, break-word */
+  }
+  ```
+
+---
+
+### **7.14 `word-wrap`**
+- **What it does**: Allows long words to break and wrap onto the next line.
+- **When to use**: When preventing overflow caused by long words.
+- **How to apply**:
+  ```css
+  .element {
+    word-wrap: break-word; /* Also known as overflow-wrap */
+  }
+  ```
+
+---
+
+### **7.15 `writing-mode`**
+- **What it does**: Defines the text orientation (horizontal or vertical).
+- **When to use**: When creating vertical text or non-LTR layouts.
+- **How to apply**:
+  ```css
+  .element {
+    writing-mode: vertical-rl; /* Other values: horizontal-tb, vertical-lr */
+  }
+  ```
+
+---
+
+### **7.16 `clip-path`**
+- **What it does**: Clips an element to a specific shape (circle, polygon, etc.).
+- **When to use**: When creating custom shapes or masking elements.
+- **How to apply**:
+  ```css
+  .element {
+    clip-path: circle(50% at 50% 50%); /* Other shapes: polygon(), ellipse() */
+  }
+  ```
+
+---
+
+### **7.17 `mask`**
+- **What it does**: Applies a mask to an element (e.g., gradient, image).
+- **When to use**: When creating complex visual effects.
+- **How to apply**:
+  ```css
+  .element {
+    mask: linear-gradient(black, transparent);
+  }
+  ```
+
+---
+
+### **7.18 `mask-mode`**
+- **What it does**: Defines how the mask is applied (alpha or luminance).
+- **When to use**: When controlling the masking behavior.
+- **How to apply**:
+  ```css
+  .element {
+    mask-mode: alpha; /* Other values: luminance */
+  }
+  ```
+
+---
+
+## **8. CSS At-Rules**
+
+### **8.1 `@property`**
+- **What it does**: Defines custom CSS properties with types and constraints.
+- **When to use**: When creating advanced, type-safe custom properties.
+- **How to apply**:
+  ```css
+  @property --primary-color {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: blue;
+  }
+  ```
+
+---
+
+### **8.2 `@font-face`**
+- **What it does**: Defines custom fonts for use in the document.
+- **When to use**: When loading custom or web fonts.
+- **How to apply**:
+  ```css
+  @font-face {
+    font-family: 'MyFont';
+    src: url('myfont.woff2') format('woff2');
+  }
+  ```
+
+---
+
+### **8.3 `@layer`**
+- **What it does**: Defines a cascade layer for organizing styles.
+- **When to use**: When managing specificity and order of styles.
+- **How to apply**:
+  ```css
+  @layer base, theme, utilities;
+
+  @layer base {
+    body { font-size: 16px; }
+  }
+  ```
+
+---
+
+### **8.4 `@page`**
+- **What it does**: Defines styles for printed pages.
+- **When to use**: When creating print-friendly layouts.
+- **How to apply**:
+  ```css
+  @page {
+    size: A4;
+    margin: 2cm;
+  }
+  ```
+
+---
+
+### **8.5 `@scope`**
+- **What it does**: Scopes styles to a specific part of the document.
+- **When to use**: When creating modular or component-based styles.
+- **How to apply**:
+  ```css
+  @scope (.component) {
+    h1 { color: red; }
+  }
+  ```
+
+---
+
+### **8.6 `:dir()`**
+- **What it does**: Matches elements based on their text direction (LTR or RTL).
+- **When to use**: When supporting multilingual or bidirectional text.
+- **How to apply**:
+  ```css
+  :dir(rtl) {
+    text-align: right;
+  }
+  ```
+
+---
+
+### **8.7 `:defined`**
+- **What it does**: Matches elements that are defined (e.g., custom elements).
+- **When to use**: When styling custom elements after they are registered.
+- **How to apply**:
+  ```css
+  my-element:defined {
+    display: block;
+  }
+  ```
+
+---
+
+### **8.8 `:any-link`**
+- **What it does**: Matches any anchor element (`<a>`, `<area>`) with an `href` attribute.
+- **When to use**: When styling all links uniformly.
+- **How to apply**:
+  ```css
+  :any-link {
+    color: blue;
+  }
+  ```
+
+---
+
+## **9. Conclusion**
+This **complete CSS note sheet** covers everything from basic concepts to advanced properties and at-rules. It’s designed to be a **comprehensive resource** for learning and mastering CSS. Let me know if you need further assistance! 😊
 
 
 
