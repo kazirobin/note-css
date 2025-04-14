@@ -1,18 +1,4 @@
-# note - css
- ***
 
-> # Some useful site like:
-### **[ 1. Flex box labs ](https://github.com/prazzon/Flexbox-Labs)** 
- ***
-### **[2. Coolors](https://coolors.co/)**
- ***
-### **[3. Css Tricks](https://css-tricks.com/)**
- ***
-
-[]()
-[]()
-[]()
----
 
 ### 1. **HTML Basics**
    [HTML Tags](https://www.w3schools.com/TAGS/default.asp)

@@ -1,5 +1,6 @@
 .parent{
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,10 +10,25 @@
     width: 20%;
     border: 1px solid gray;
     margin: 5px;
+    flex: 1;
 }
-.child:nth-child(4){
+.child:nth-child(1){ 
+    height: 200px;
+    background-color: red;
+}
+.child:nth-child(2){
     flex-basis: 100px;
+    background-color: green;
 }
 .child:nth-child(3){
     flex-shrink: 100px;
+    background-color: blue;
+}
+.child:nth-child(4){
+    flex-basis: 100px;
+    background-color: yellow;
+}
+.child:nth-child(5){
+    flex-basis: 5vh;
+    background-color: purple;
 }
