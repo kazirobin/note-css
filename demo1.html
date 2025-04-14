@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/*
+ .circle {
+  width: 200px;
+  height: 200px;
+  background: url('./tri.jpg') no-repeat center/cover;
+  
+  Clip Shape
+  clip-path: circle(30%);
+} 
+  */
+.circle {
+  width: 200px;
+  height: 200px;
+  background: url('./tri.jpg') no-repeat center/cover;
+
+  /* Multiple Masks */
+  mask-image: url('./glass.png'), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-composite: intersect; /* Combine both masks */
+  
+  -webkit-mask-image: url('./glass.png'), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-composite: destination-in; /* Safari alternative */
+  text-align: center;
+  padding-top: 100px;
+}
+
+main{
+    height: 400px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+h1{
+    font-weight: 900;
+    color: red;
+    font-size: 40px;
+    -webkit-text-stroke: 2px  white;
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    hello
+    <section>
+        <main>
+            <div class="circle">
+                <h1>i am kazi robin</h1>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
